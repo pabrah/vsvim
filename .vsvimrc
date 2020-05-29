@@ -23,7 +23,7 @@ xnoremap gus V:vsc Edit.UnCommentSelection<cr>
 nnoremap gq :vsc Edit.GoToAll<cr>
 
 nnoremap crn :vsc Refactor.Rename<cr>
-nnoremap cri :vsc EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort<cr>
+nnoremap cri :vsc EditorContextMenus.CodeWindow.RemoveAndSort<cr>
 nnoremap <space> :vsc Window.QuickLaunch<cr>
 nnoremap @t :vsc TestExplorer.RepeatLastRun<cr>
 nnoremap @T :vsc TestExplorer.RunAllTests<cr>
