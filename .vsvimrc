@@ -1,0 +1,35 @@
+set ignorecase
+set smartcase
+set incsearch
+set tabstop=4
+set shiftwidth=4
+set backspace=eol,start,indent
+set nostartofline
+set hlsearch
+set autoindent
+set expandtab
+set ttimeout
+set ttimeoutlen=50
+
+inoremap z,  <c-o>
+inoremap z,p <c-r>"
+
+"horrible hack because VsVim refuses to fix this bug
+nnoremap g; u<c-r>
+nnoremap gwS :vsc Window.NewHorizontalTabGroup<cr>
+nnoremap gwv :vsc Window.NewVerticalTabGroup<cr>
+xnoremap gcs V:vsc Edit.CommentSelection<cr>
+nnoremap gus V:vsc Edit.UnCommentSelection<cr>
+nnoremap gq :vsc 
+nnoremap <space> :vsc Window.QuickLaunch<cr>
+
+nnoremap crn :vsc Refactor.Rename<cr>
+nnoremap cri :vsc EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort<cr>
+nnoremap <space> :vsc Window.QuickLaunch<cr>
+nnoremap @t :vsc TestExplorer.RepeatLastRun<cr>
+nnoremap @T :vsc TestExplorer.RunAll<cr>
+nnoremap cow :vsc Edit.ToggleWordWrap<cr>
+nnoremap gk :vsc Edit.PeekDefinition<cr>
+
+nnoremap gI :vsc Edit.GoToImplementation<cr>
+nnoremap gI :vsc Edit.GoToIDeclaration<cr>
