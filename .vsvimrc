@@ -19,17 +19,23 @@ nnoremap g; u<c-r>
 nnoremap gwS :vsc Window.NewHorizontalTabGroup<cr>
 nnoremap gwv :vsc Window.NewVerticalTabGroup<cr>
 xnoremap gcs V:vsc Edit.CommentSelection<cr>
-nnoremap gus V:vsc Edit.UnCommentSelection<cr>
-nnoremap gq :vsc 
-nnoremap <space> :vsc Window.QuickLaunch<cr>
+xnoremap gus V:vsc Edit.UnCommentSelection<cr>
+nnoremap gq :vsc Edit.GoToAll<cr>
 
 nnoremap crn :vsc Refactor.Rename<cr>
 nnoremap cri :vsc EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort<cr>
 nnoremap <space> :vsc Window.QuickLaunch<cr>
 nnoremap @t :vsc TestExplorer.RepeatLastRun<cr>
-nnoremap @T :vsc TestExplorer.RunAll<cr>
+nnoremap @T :vsc TestExplorer.RunAllTests<cr>
 nnoremap cow :vsc Edit.ToggleWordWrap<cr>
 nnoremap gk :vsc Edit.PeekDefinition<cr>
 
 nnoremap gI :vsc Edit.GoToImplementation<cr>
-nnoremap gI :vsc Edit.GoToIDeclaration<cr>
+nnoremap gD :vsc Edit.GoToDefinition<cr>
+nnoremap gfr :vsc Edit.FindAllReferences<cr>
+
+nnoremap grcc :vsc EditorContextMenus.FileHealthIndicator.RunDefaultCodeCleanup<cr>
+nnoremap gbs :vsc Build.BuildSolution<cr>
+nnoremap gbcs :vsc Build.CleanSolution<cr>
+nnoremap gbp :vsc Build.BuildSelection<cr>
+nnoremap gbcp :vsc Build.CleanSelection<cr>
