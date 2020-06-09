@@ -39,3 +39,4 @@ nnoremap gbs :vsc Build.BuildSolution<cr>
 nnoremap gbcs :vsc Build.CleanSolution<cr>
 nnoremap gbp :vsc Build.BuildSelection<cr>
 nnoremap gbcp :vsc Build.CleanSelection<cr>
+nnoremap gccl :vsc EditorContextMenus.FileHealthIndicator.RundefaultCodeCleanup<cr>
