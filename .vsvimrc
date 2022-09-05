@@ -2,6 +2,7 @@ set ignorecase
 set smartcase
 set incsearch
 set tabstop=4
+set scrolloff=2  
 set shiftwidth=4
 set backspace=eol,start,indent
 set nostartofline
@@ -10,6 +11,8 @@ set autoindent
 set expandtab
 set ttimeout
 set ttimeoutlen=50
+set matchpairs+=<:>
+set number 
 
 inoremap z,  <c-o>
 inoremap z,p <c-r>"
